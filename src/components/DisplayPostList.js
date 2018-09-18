@@ -1,5 +1,6 @@
 import React from 'react'
 import PostRow from './PostRow.js'
+import { connect } from 'react-redux'
 
 let DisplayPostList = ({ posts, deletePost }) => {
     return (
@@ -16,4 +17,4 @@ let DisplayPostList = ({ posts, deletePost }) => {
     )
 }
 
-export default DisplayPostList;
+export default connect(state => state)(DisplayPostList);

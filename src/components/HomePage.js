@@ -1,6 +1,6 @@
 import React from 'react';
 import FormDocumentWrapper from './FormDocumentWrapper.js'
-import DisplayPostList from './DisplayPostList.js'
+import DisplayPostList from './DisplayPostList'
 
 let HomePage = ({ posts, addPost, deletePost }) => {
     console.log(posts)
