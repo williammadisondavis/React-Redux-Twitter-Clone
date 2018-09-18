@@ -1,6 +1,6 @@
 import React from 'react';
 import { HashRouter, Route, Switch} from 'react-router-dom'
-import HomePageContainer from './components/HomePageContainer.js'
+import HomePage from './components/HomePage.js'
 
 let About = () => (<h1>This is cool</h1>)
 
@@ -9,7 +9,7 @@ const Router = () => (
         <div>
             <header/>
             <Switch>
-                <Route exact path='/' component={HomePageContainer}/>
+                <Route exact path='/' component={HomePage}/>
                 <Route path='/about' component={About}/>
             </Switch>
         </div>
